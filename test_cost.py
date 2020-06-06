@@ -12,3 +12,15 @@ def test_simple_cost_and_type():
     price = 2
     units = 2
     assert calc_base_cost(category, price, units) == 4
+
+def test_simple_cost_and_types():
+    category = 'per-unit'
+    price = 2
+    units = 1.7
+    assert calc_base_cost(category, price, units) == 4
+
+def test_simple_cost_and_types():
+    category = 'by weight'
+    price = 2
+    units = 1.7
+    assert calc_base_cost(category, price, units) == 3.4
